@@ -1,0 +1,11 @@
+Model Information:
+* title:	Honey Bee MK4
+* source:	https://sketchfab.com/3d-models/honey-bee-mk4-d8c389c0559743d38ff941a56bc52854
+* author:	peterandrew (https://sketchfab.com/peterandrew)
+
+Model License:
+* license type:	CC-BY-4.0 (http://creativecommons.org/licenses/by/4.0/)
+* requirements:	Author must be credited. Commercial use is allowed.
+
+If you use this 3D model in your project be sure to copy paste this credit wherever you share it:
+This work is based on "Honey Bee MK4" (https://sketchfab.com/3d-models/honey-bee-mk4-d8c389c0559743d38ff941a56bc52854) by peterandrew (https://sketchfab.com/peterandrew) licensed under CC-BY-4.0 (http://creativecommons.org/licenses/by/4.0/)

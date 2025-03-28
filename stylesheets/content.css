@@ -50,6 +50,8 @@ body {
 .header-line-2 {
   width: 7.3vw;
   height: 7.3vw;
+  min-width: 40px;
+  min-height: 40px;
 }
 
 .number {

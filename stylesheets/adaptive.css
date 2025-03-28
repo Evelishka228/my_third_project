@@ -1,801 +1,170 @@
 /* ///////////////////////// Мобильные устройства ///////////////////////// */
 @media screen and (max-width: 414px) and (orientation: portrait) {
   /* Вертикальная ориентация для мобильных устройств */
-
   body {
-    background-image: url(../img/background.svg);
-    background-size: cover;
-    background-repeat: repeat-y;
-    overflow-x: hidden;
-    animation: scroll 500s linear infinite;
-    min-height: 100vh;
+    background-size: auto 100%;
   }
-
-  #custom-cursor {
-    position: fixed;
-    width: calc(32px + 1vw);
-    height: calc(32px + 1vw);
-    background: url("../img/cursor.svg") no-repeat center/contain;
-    pointer-events: none;
-    z-index: 9999;
-    transform: translate(-50%, -50%);
+  .linevert {
+    overflow: hidden;
   }
-
-  @keyframes scroll {
-    100% {
-      background-position: 0px -1500%;
-    }
-  }
-
-  .wrapper {
-    display: flex;
-    flex-direction: column;
-    min-height: 100vh;
-    width: 100%;
-  }
-
-  /* Адаптивные изображения */
-  .responsive-img {
-    max-width: 100%;
-    height: auto;
-    display: block;
-  }
-
-  /* Секция первая */
-  .header {
-    width: 100%;
-  }
-
   .header-text {
-    display: flex;
-    width: 100%;
-    align-items: center;
-    flex-wrap: wrap;
-    flex-direction: row;
-    justify-content: space-between;
-  }
-
-  .header-line-1,
-  .header-line-2 {
-    max-width: 7.3vw;
-    height: auto;
-  }
-
-  .number {
-    display: flex;
-    flex-direction: row;
-    justify-content: space-between;
+    height: 12vw;
     gap: 5vw;
   }
-
   .header-text-2,
   .header-text-3,
   .header-text-4,
-  .header-text-5 {
-    font-family: "HelveticaLight";
-    font-size: clamp(12px, 1.7vw, 24px);
-    color: #000000;
-  }
-
-  /* 3D секция */
-  .header-3d {
-    width: 100%;
-    height: auto;
-    aspect-ratio: 16/7;
-    display: flex;
-    justify-content: center;
-  }
-
-  .model {
-    width: 100%;
-    height: 100%;
-    overflow-y: hidden;
-  }
-
-  /* Секция кружочков */
-  .header-circle {
-    display: flex;
-    width: 100%;
-    padding: 2vw 0;
-    flex-direction: row;
-    align-items: center;
-    justify-content: space-between;
-  }
-
-  .circle {
-    flex: 0 0 62.5vw;
-    max-width: 62.5vw;
-    margin: 0 auto;
-  }
-
-  .header-circle-line1 {
-    display: flex;
-    justify-content: start;
-  }
-  .header-circle-line2 {
-    display: flex;
-    justify-content: end;
-  }
-
-  /* Секция вторая */
-  .window-1 {
-    width: 100%;
-    display: flex;
-    flex-direction: column;
-    padding: 4vw;
-  }
-  .window-1-main {
-    display: flex;
-    width: 100%;
-    height: auto;
-    flex-direction: row;
-  }
-  .image-container {
-    display: flex;
-    width: 100%;
-    height: auto;
-    gap: 3vw;
-    justify-content: center;
-    align-items: center;
-    flex-direction: column;
-  }
-  .simvol {
-    width: 85.7vw;
-    max-width: 100%;
-    height: auto;
-    margin-top: -0vw;
-  }
-  .plashka1 {
-    width: 100%;
-    position: absolute;
-    margin-top: 23vw;
-    margin-left: 3vw;
-  }
-  .number1 {
-    width: 100%;
-    justify-content: start;
-    margin-left: 1.5vw;
-  }
-  .linevert {
-    width: 100%;
-    justify-content: center;
-    margin-left: -1.5vw;
-  }
-  .window-1-text-visotki {
-    width: 100%;
-    display: flex;
-    justify-content: center;
-  }
-
-  .visotki-text {
-    font-family: "HelveticaLight";
-    font-size: clamp(16px, 2.5vw, 32px);
-    color: rgb(0, 0, 0);
-    margin: 3vw 0;
-    text-align: center;
-  }
-
-  /* Секция третья */
-  .window-2 {
-    width: 100%;
-    position: relative;
-    overflow: hidden;
-    padding: 4vw;
-  }
-  .plashka2 {
-    position: absolute;
-    margin-top: 14vw;
-    margin-left: 70vw;
-  }
-  .window-2-main {
-    width: 100%;
-    height: auto;
-    position: relative;
-    display: flex;
-    flex-direction: column;
-  }
-  .window-number {
-    display: flex;
-    width: 100%;
-    justify-content: end;
-  }
-  .number2 {
-    margin-right: 1.5vw;
-  }
-  .box {
-    width: 100%;
-    height: auto;
-    position: relative;
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
-  }
-  .flower,
-  .flo {
-    width: 13.5%;
-    max-width: 100%;
-    position: relative;
-    cursor: grab;
-    user-select: none;
-    touch-action: none;
-    margin: 1.5vw;
-  }
-  #flo1 {
-    margin-left: 9vw;
-  }
-  #flo2 {
-    margin-left: 30vw;
-    margin-top: 10vw;
-  }
-  #flo3 {
-    margin-left: 60vw;
-    margin-top: 3vw;
-  }
-  #flo4 {
-    margin-left: 50vw;
-    margin-top: 20vw;
-  }
-  #flo5 {
-    margin-left: 11vw;
-    margin-top: 30vw;
-  }
-  #flo6 {
-    margin-left: 70vw;
-    margin-top: 30vw;
-  }
-
-  /* Секция четвертая */
-  .window-3 {
-    position: relative;
-    width: 100%;
-    min-height: 80vh; /* Используем viewport height для минимальной высоты */
-    height: auto; /* Автоматическая высота для контента */
-    padding: 4vw;
-    overflow: visible; /* Разрешаем контенту выходить за пределы */
-  }
-
-  .drawing-area {
-    position: relative;
-    width: 100%;
-    height: 100%; /* Занимает всю высоту родителя */
-    min-height: inherit; /* Наследует минимальную высоту */
-  }
-
-  .window-3-main {
-    display: flex;
-    width: 100%;
-    height: 100%;
-    position: relative;
-  }
-
-  .plashka3 {
-    position: absolute;
-    left: 13vw;
-    top: 1vw;
-    z-index: 10;
-    width: auto; /* Ширина по содержимому */
-    max-width: 80%; /* Максимальная ширина */
-  }
-
-  .number3 {
-    position: absolute;
-    left: 1.5vw;
-    z-index: 10;
-  }
-
-  /* Секция пятая */
-  .window-4 {
-    width: 100%;
-    display: flex;
-    flex-direction: column;
-    padding: 4vw;
-  }
-
-  .window-4-main {
-    width: 100%;
-    height: auto;
-    display: flex;
-    flex-direction: row;
-    justify-content: space-between;
-  }
-
-  /* Секция концовка */
-  .finish-text {
-    display: flex;
-    width: 100%;
-    height: auto;
-    flex-direction: row;
-    justify-content: space-between;
-    align-items: end;
-    padding: 2vw 0;
-  }
-  .name {
-    display: flex;
-    justify-content: start;
-    align-items: start;
-  }
-  .name-text {
-    font-family: "HelveticaLight";
-    font-size: clamp(12px, 1.7vw, 24px);
-    color: rgb(0, 0, 0);
-    margin-top: 3vw;
-  }
-  .surname {
-    display: flex;
-    justify-content: end;
-    align-items: start;
-  }
-  .surname-text {
-    font-family: "HelveticaLight";
-    font-size: clamp(12px, 1.7vw, 24px);
-    color: rgb(0, 0, 0);
-    margin-top: 3vw;
-  }
-  .namee {
-    display: flex;
-    flex-direction: row;
-    justify-content: space-between;
-    width: 100%;
-  }
-  .trud-text {
-    font-family: "HelveticaLight";
-    font-size: clamp(16px, 2.5vw, 32px);
-    color: rgb(0, 0, 0);
-    margin: 3vw 0;
-    text-align: center;
-    line-height: 1.3;
-    margin-left: auto;
-    margin-right: auto;
-    max-width: 90%;
-  }
-  .number4 {
-    margin-right: 1.5vw;
-    display: flex;
-    justify-content: end;
-  }
-  .linevert2 {
-    width: 100%;
-    height: auto;
-    display: flex;
-    justify-content: center;
-    align-items: start;
-  }
-  .knopochka-div {
-    width: 100%;
-    height: auto;
-    padding: 2vw 0;
-  }
-
-  /* Стили для кнопки */
-  .knopka {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    width: min(90%, 24vw);
-    height: auto;
-    padding: 1.5vw 3vw;
-    background-color: white;
-    border: 0.15vw solid black;
-    cursor: pointer;
-    margin: 0 auto;
-    outline: none;
-    transition: all 0.3s ease;
-    position: relative;
-    z-index: 10;
-  }
-
-  .knopka:hover {
-    background-color: #f0f0f0;
-  }
-
-  .rules {
-    font-family: "HelveticaRegular";
-    font-size: clamp(12px, 1.3vw, 18px);
-    color: #000000;
-    pointer-events: none;
-    text-align: center;
-  }
-
-  .black-screen {
-    position: fixed;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    background-color: black;
-    z-index: 9998;
-    display: none;
-  }
-  .line-finish {
-    width: 100%;
-    height: auto;
-    display: flex;
-    justify-content: center;
-    align-items: end;
-    margin-top: 5vw;
-    position: relative;
-  }
-
-  .group {
-    width: 75vw;
-    max-width: 100%;
-    height: auto;
-    display: flex;
-    flex-direction: column;
-    justify-content: space-around;
-  }
-  .numbers {
-    display: flex;
-    flex-direction: row;
-    justify-content: space-between;
-    gap: 5vw;
-  }
-
+  .header-text-5,
   .g1,
   .g2,
   .g3,
   .g4 {
-    font-family: "HelveticaLight";
-    font-size: clamp(12px, 1.7vw, 24px);
-    color: #000000;
-  }
-  .circle img {
-    transition: opacity 0.5s ease;
-    opacity: 1;
+    font-size: 3.5vw;
   }
 
-  /* Анимация для кружочков */
-  @keyframes circlePulse {
-    0%,
-    100% {
-      opacity: 1;
-    }
-    50% {
-      opacity: 0;
-    }
-  }
-  .circle img:nth-child(1) {
-    animation: circlePulse 3s infinite;
-  }
-  .circle img:nth-child(2) {
-    animation: circlePulse 3s infinite 0.3s;
-  }
-  .circle img:nth-child(3) {
-    animation: circlePulse 3s infinite 0.6s;
+  .header-3d,
+  .model {
+    height: 80vw;
   }
 
-  /* Стили для плашки "ВНИМАНИЕ" */
-  .attention-overlay {
-    position: fixed;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    background-color: rgba(255, 255, 255, 0.75);
-    backdrop-filter: blur(2vw);
-    -webkit-backdrop-filter: blur(0.15vw);
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    z-index: 10000;
-  }
-
-  .attention-content {
-    position: relative;
-    background-color: white;
-    padding: 1.85vw 4vw;
-    border: 0.2vw solid black;
-    display: flex;
-    align-items: center;
-    box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
-  }
-
-  .attention-text {
-    font-family: "HelveticaLight";
-    font-size: clamp(16px, 3vw, 32px);
-    color: black;
-    margin-right: 3vw;
-    margin-top: 0.3vw;
-  }
-
-  .attention-close {
-    position: absolute;
-    right: 1vw;
-    top: 1vw;
-    background: none;
-    border: none;
-    font-size: clamp(16px, 3vw, 32px);
-    cursor: pointer;
-    padding: 0.5vw;
-    line-height: 1;
-  }
-
-  .attention-close:hover {
-    opacity: 0.7;
-  }
-  .header-text {
-    flex-direction: column;
-    gap: 5vw;
-  }
-
-  .header-line-1,
-  .header-line-2 {
-    flex: 0 0 15vw;
-    max-width: 15vw;
-  }
-
-  .number {
-    flex-direction: column;
-    gap: 3vw;
-    align-items: center;
-  }
-
-  .header-3d {
-    aspect-ratio: 16/9;
+  .header-circle {
+    height: 8vw;
   }
 
   .circle {
-    flex: 0 0 80vw;
-    max-width: 80vw;
+    width: 70vw;
+    height: 4vw;
   }
 
   .window-1-main,
   .window-4-main {
+    height: 25vw;
+  }
+
+  .image-container {
+    height: 60vw;
     flex-direction: column;
   }
 
-  .number1,
-  .number3 {
+  .simvol {
+    width: 90vw;
+    height: 40vw;
+  }
+
+  .plashka1 {
+    margin-top: 35vw;
     margin-left: 0;
-    margin-bottom: 3vw;
+    width: 45vw;
   }
 
-  .number2,
-  .number4 {
-    margin-right: 0;
-    margin-bottom: 3vw;
-  }
-
-  .plashka1,
-  .plashka2,
-  .plashka3 {
-    position: relative;
-    margin: 3vw auto;
-    width: 90%;
-  }
-
-  .box {
-    flex-direction: column;
-    align-items: center;
-  }
-
-  .flo {
-    position: relative !important;
-    margin: 4vw !important;
-    width: 50% !important;
-    left: auto !important;
-    top: auto !important;
-  }
-
-  .knopka {
-    width: 90%;
-    padding: 4vw;
+  .visotki-text,
+  .trud-text {
+    font-size: 4.5vw;
+    line-height: 5vw;
+    text-align: center;
   }
 
   .trud-text {
-    font-size: clamp(16px, 4vw, 24px);
+    margin-left: 5vw;
   }
 
-  /* Адаптация для window-3 на мобильных */
+  .window-2-main {
+    height: 90vw;
+  }
+
+  .box {
+    margin-top: 20vw;
+    height: 120vw;
+  }
+
+  .flo {
+    width: 20%;
+  }
+
+  .plashka2 {
+    margin-top: 25vw;
+    margin-left: 50vw;
+    width: 40vw;
+  }
+
   .window-3 {
-    min-height: 60vh;
-    padding: 6vw;
+    height: 90vw;
   }
 
   .plashka3 {
-    left: 5vw;
-    top: 2vw;
-    max-width: 90%;
+    margin-left: 5vw;
+    width: 45vw;
   }
 
-  .number3 {
-    left: 3vw;
-  }
-}
-
-@media screen and (max-width: 414px) and (orientation: landscape) {
-  /* Горизонтальная ориентация для мобильных устройств */
-  .header-text {
-    flex-direction: row;
-    gap: 3vw;
-  }
-
-  .header-line-1,
-  .header-line-2 {
-    flex: 0 0 10vw;
-    max-width: 10vw;
-  }
-
-  .number {
-    flex-direction: row;
-    gap: 5vw;
-  }
-
-  .header-3d {
-    aspect-ratio: 16/7;
-  }
-
-  .circle {
-    flex: 0 0 70vw;
-    max-width: 70vw;
-  }
-
-  .flo {
-    width: 20% !important;
-    margin: 2vw !important;
+  .linevert2 {
+    height: 25vw;
+    margin-top: 3vw;
   }
 
   .knopka {
-    width: 60%;
-    padding: 2vw;
-  }
-}
-
-/* ///////////////////////// Планшеты ///////////////////////// */
-@media screen and (min-width: 415px) and (max-width: 768px) and (orientation: portrait) {
-  /* Вертикальная ориентация для планшетов */
-  .header-text {
-    flex-direction: column;
-    gap: 4vw;
+    width: 70vw;
+    height: 15vw;
   }
 
-  .header-line-1,
-  .header-line-2 {
-    flex: 0 0 12vw;
-    max-width: 12vw;
+  .rules {
+    font-size: 3.5vw;
   }
 
-  .number {
-    flex-direction: row;
-    gap: 8vw;
+  .line-finish {
+    height: 35vw;
+    margin-top: 50vw;
+    overflow: hidden;
   }
 
-  .header-3d {
-    aspect-ratio: 16/8;
+  .name-text,
+  .surname-text {
+    font-size: 3.5vw;
   }
 
-  .circle {
-    flex: 0 0 70vw;
-    max-width: 70vw;
-  }
-
-  .flo {
-    width: 25% !important;
-    margin: 2vw !important;
-  }
-
-  .knopka {
-    width: 70%;
-    padding: 2.5vw;
-  }
-
-  /* Адаптация для window-3 на планшетах */
-  .window-3 {
-    min-height: 70vh;
+  .attention-text {
+    font-size: 7vw;
   }
 }
 
 @media screen and (min-width: 415px) and (max-width: 768px) and (orientation: landscape) {
   /* Горизонтальная ориентация для планшетов */
-  .header-text {
-    flex-direction: row;
-    gap: 3vw;
+  .header-3d,
+  .model {
+    height: 40vw;
+  }
+  .image-container {
+    height: 35vw;
   }
 
-  .header-line-1,
-  .header-line-2 {
-    flex: 0 0 8vw;
-    max-width: 8vw;
+  .simvol {
+    width: 70vw;
+    height: 25vw;
   }
 
-  .number {
-    flex-direction: row;
-    gap: 6vw;
+  .window-2-main {
+    height: 50vw;
   }
 
-  .header-3d {
-    aspect-ratio: 16/6;
+  .box {
+    height: 70vw;
   }
 
-  .circle {
-    flex: 0 0 65vw;
-    max-width: 65vw;
-  }
-
-  .flo {
-    width: 15% !important;
-    margin: 1.5vw !important;
-  }
-
-  .knopka {
-    width: 50%;
-    padding: 2vw;
+  .window-3 {
+    height: 50vw;
   }
 }
 
-/* ///////////////////////// Маленькие экраны ///////////////////////// */
-@media screen and (min-width: 769px) and (max-width: 1024px) and (orientation: portrait) {
-  /* Вертикальная ориентация для экранов от 769px до 1024px */
-  .header-text {
-    flex-direction: row;
-    gap: 3vw;
-  }
-
-  .header-line-1,
-  .header-line-2 {
-    flex: 0 0 7vw;
-    max-width: 7vw;
-  }
-
-  .number {
-    flex-direction: row;
-    gap: 5vw;
-  }
-
-  .header-3d {
-    aspect-ratio: 16/7;
-  }
-
-  .circle {
-    flex: 0 0 65vw;
-    max-width: 65vw;
-  }
-
-  .flo {
-    width: 15% !important;
-    margin: 1.5vw !important;
-  }
-
-  .knopka {
-    width: 40%;
-    padding: 1.5vw;
-  }
+/* Общие стили для адаптации изображений */
+.responsive-img {
+  max-width: 100%;
+  height: auto;
 }
 
-@media screen and (min-width: 769px) and (max-width: 1024px) and (orientation: landscape) {
-  /* Горизонтальная ориентация для экранов от 769px до 1024px */
-  .header-text {
-    flex-direction: row;
-    gap: 2vw;
-  }
-
-  .header-line-1,
-  .header-line-2 {
-    flex: 0 0 6vw;
-    max-width: 6vw;
-  }
-
-  .number {
-    flex-direction: row;
-    gap: 4vw;
-  }
-
-  .header-3d {
-    aspect-ratio: 16/6;
-  }
-
-  .circle {
-    flex: 0 0 60vw;
-    max-width: 60vw;
-  }
-
-  .flo {
-    width: 12% !important;
-    margin: 1vw !important;
-  }
-
-  .knopka {
-    width: 35%;
-    padding: 1.2vw;
+/* Уменьшаем курсор на мобильных устройствах */
+@media (max-width: 768px) {
+  #custom-cursor {
+    width: 24px;
+    height: 24px;
+    background-size: contain;
   }
 }

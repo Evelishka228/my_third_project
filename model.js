@@ -1,6 +1,6 @@
 import * as THREE from "three";
-import { OrbitControls } from "https://unpkg.com/three@0.139.0/examples/jsm/controls/OrbitControls.js";
-import { GLTFLoader } from "https://unpkg.com/three@0.139.0/examples/jsm/loaders/GLTFLoader.js";
+import { OrbitControls } from "OrbitControls";
+import { GLTFLoader } from "GLTFLoader";
 import { RectAreaLightUniformsLib } from "RectAreaLightUniformsLib";
 
 document.addEventListener("DOMContentLoaded", () => {
